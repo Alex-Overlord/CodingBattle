@@ -1,0 +1,27 @@
+#include <iostream>
+#using namespace std;
+
+int main ()
+{
+  int B, T, N;
+
+  cin >> B;
+  cin >> T;
+  cin >> N;
+
+  for (int b=0 ; b<B ; b++) {
+    N -= 2;
+  }
+  for (int t=0 ; t<T ; t++) {
+    N -= 3;
+  }
+
+  if (N == 0) {
+    cout << "LOOT!";
+  } else {
+    cout << "RHUM!";
+  }
+
+
+  return 0;
+}
